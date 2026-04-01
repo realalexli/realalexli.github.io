@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Running Calculator</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    </head>
+    <body>
+        <div class="container">
+        <h1>Alex's Running Pace Calculator</h1>
+        <form>
+            <label for="distance">Event Distance</label><br>
+            <input type="text" id="distance" name="distance" placeholder="1600">
+
+            <select name="distance_units" id="distance_units">
+            <option value="m">m</option>
+            <option value="mi">mi</option>
+            <option value="km">km</option>
+            </select><br>
+
+            <label for="time">Time</label><br>
+            <input type="text" id="time" name="time" placeholder="10:00"><br>
+
+            <label for="pace">Pace</label><br>
+            <input type="text" id="pace" name="pace" placeholder="6:00">
+
+            <select name="pace_units" id="pace_units">
+            <option value="min/mi">min/mi</option>
+            <option value="min/km">min/km</option>
+            <option value="mi/hr">mi/hr</option>
+            <option value="km/hr">km/hr</option>
+            <option value="m/s">m/s</option>
+            </select><br>
+
+            <button id="calculate" class="button-15" type="button">Calculate</button>
+            <button type="button" id="calculate_splits">Splits</button>
+            <input type="reset" value="Reset" class="button-1">
+            <br><button type="button" id="calculation_history" class="button-1">
+                <img src="images/clock-history.svg">
+                Calculation History
+            </button>
+         </form>
+        <br><a href="pace.html">Offical VDOT calculator</a>
+        <br><a href="split_charts.html">Splits Chart</a>
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
